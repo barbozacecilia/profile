@@ -11,6 +11,7 @@ coloque nas sessões indicadas*/
    --cor-de-link: #000;
    --cor-de-menu: #464646;
    --cor-de-about-me: #EAF2FD;
+   --cor-de-blue: #2A7AE4;
 }
 
 body, .tudo {
@@ -82,14 +83,15 @@ section.experience{
 
 /*Contacto*/
 
-section.formcontato{
-
+section.form__contact{    
+    background-color: var( --cor-de-about-me);
 }
 
 /*footeer*/
 
 section.footer{
-   
+    background: var(--cor-de-fundo);
+
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?

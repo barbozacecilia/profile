@@ -93,9 +93,9 @@ button.experiencia__botao--repo{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    
 }
-
-
 
 
 button.experience__botao--demo{
@@ -112,4 +112,6 @@ button.experience__botao--demo{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    border-color: #2A7AE4;
+    border-style: none;
     }
