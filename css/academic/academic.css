@@ -1,27 +1,65 @@
 section.academic{
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .academic__courses{
     display: flex;
+    justify-content: space-between; 
+    margin-bottom: 2vh;
+}
+h2.academic__title{
+    color: var(--preto-100, #464646);
+    text-align: center;
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 2vh;
+}
+
+ul.academic__courses__list{
+    margin: 1.5vh;
 }
 
 li.academic__courses__item__img{
     height: 250px;
     width: 250px;
-    margin: 0 auto;
-    background-position: center;
-    background-repeat: no-repeat;
     background: var(--preto-branco, #FFF);
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1vh;
 }
 
 img#utn__logo{
-    width: auto;
+
     height: 150px;
 }
 
 img#ingenias__logo{
     width: auto;
     height: 150px;
+}
+
+li.academic__courses__item__title{
+    color: var(--preto-100, #464646);
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 1vh;
+}
+
+li.academic__courses__item__subtitle{
+    color: var(--preto-100, #464646);
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
