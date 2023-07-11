@@ -1,0 +1,28 @@
+section.about{
+    display: flex;
+    padding-inline: 10vh;
+    margin-bottom: 4vh;
+}
+
+h3.about__title{
+    color: var(--preto-100, #464646);
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 2vh;
+}
+
+p.about__paragraph{
+    display: flex;
+    width: 751px;
+    flex-direction: column;
+    color: var(--preto-100, #464646);
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 2vh;
+}

@@ -1,0 +1,27 @@
+section.academic{
+    display: flex;
+}
+
+.academic__courses{
+    display: flex;
+}
+
+li.academic__courses__item__img{
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: var(--preto-branco, #FFF);
+    flex-shrink: 0;
+}
+
+img#utn__logo{
+    width: auto;
+    height: 150px;
+}
+
+img#ingenias__logo{
+    width: auto;
+    height: 150px;
+}
