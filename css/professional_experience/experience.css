@@ -104,9 +104,9 @@ button.experience__botao--demo{
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background: var(--azul-100, #2A7AE4);   
+    background:  #2A7AE4;   
 
-    color: var(--preto-branco, #FFF);
+    color: #FFF;
     font-family: Raleway;
     font-size: 16px;
     font-style: normal;
