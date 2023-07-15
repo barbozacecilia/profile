@@ -265,10 +265,31 @@
                     <h3 class="form__contact__subtext">Do you want to contact me?</h3>
                     <h3 class="form__contact__subtext">Complete the following form and I will contact you as soon as possible. </h3>
                     <form class="form__contact__form" name="form">
-                        <input class="form__contact__input" type="text" name="nombre" placeholder="Name">
-                        <input class="form__contact__input" type="email" name="email" placeholder="E-mail">
-                        <input class="form__contact__input" type="text" name="asunto" placeholder="subject">
-                        <textarea class="form__contact__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Message"></textarea>
+                        <div class="input_container">
+                            <label class="input-label" for="name">Nombre</label>
+                            <input class="form__contact__input" id="name" type="text" name="name" placeholder="" data-type="name" minlength="2" maxlength="50" required>
+                            <span class="input-message-error">Este campo debe estar completo</span>
+                        </div>
+                        
+                        <div class="input_container">
+                            <label class="input-label" for="email">E-mail</label>
+                            <input class="form__contact__input" id="email" type="email" name="email"  data-type="email" required>
+                            <span class="input-message-error">El email ingresado no tiene un formato valido (Ejemplo: xxxxx@xxxx.com)</span>
+                        </div>
+                        
+                        <div class="input_container">
+                            <label class="input-label" for="subject">Asunto</label>
+                            <input class="form__contact__input" id="subject" type="text" name="subject" placeholder="Asunto" data-type="subject" required>
+                            <span class="input-message-error">Este campo debe estar completo</span>
+                        </div>
+                        
+                        <div class="input_container">
+                            <label class="input-label" for="message">Su mensaje</label>
+                            <textarea class="form__contact__textarea" rows="5" cols="40" id="message" name="message" placeholder="Mensaje" data-type="message" maxlength="300" required></textarea>
+                            <span class="input-message-error">Este campo debe tener menos de 300 letras</span>
+                        </div>
+                        
+                        
                         <button type="submit" class="form__contact__button">Send your message</button>
                     </form>
                 </div>
@@ -285,6 +306,6 @@
         </section>
     </div>
  <!-- Script del documento JavaScript -->
-<script src="validacion.js"></script>
+<script src="js/app.js" type="module"></script>
 </body>
 </html>
