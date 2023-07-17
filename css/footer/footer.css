@@ -1,7 +1,8 @@
 section.footer{
     display: flex;
-    width: 1440px;
-    padding: 32px;
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -15,4 +16,10 @@ section.footer{
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+
+/*Tablet*/
+@media only screen and (max-width: 768px) and (min-width: 426px){
+
+
 }

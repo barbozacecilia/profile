@@ -33,3 +33,24 @@ h3.hobbies__title {
     margin: 1vh;
     background: var(--preto-branco, #FFF);
 }
+
+/*Tablet*/
+@media only screen and (max-width: 768px) and (min-width: 426px){
+
+    section.hobbies{
+        margin-bottom: 2vh;
+        width: 80%;
+    
+    }
+
+    .hobbies__line {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        align-self: strech;
+    }   
+
+}

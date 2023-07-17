@@ -22,6 +22,7 @@ body, .tudo {
     margin: 0;
     padding: 0;
     line-height: 1;
+    
 }
 ol, ul,li {
     list-style: none;
@@ -29,6 +30,13 @@ ol, ul,li {
 a{
     text-decoration: none;
     color: var(--cor-de-link);
+}
+
+.tudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
@@ -49,24 +57,15 @@ https://en.bem.info/methodology/quick-start/*/
     color: var(--cor-de-menu);
 }
 
-/*Sección Title*/
-
-section.title{
-
-}
 
 /*Sección About*/
 
 section#about-me{
     background-color: var(--cor-de-about-me);
-    padding: 10vh;
 }
 
 /*Sección Hobbies*/
 
-section.hobbies{
-    
-}
 
 /* Experiencia Académica*/
 
@@ -76,11 +75,6 @@ section.academic{
 
 }
 
-/* experiencia*/
-
-section.experience{
-
-}
 
 /*Contacto*/
 
@@ -99,26 +93,9 @@ section.footer{
 Utiliza las referencias de los breakpoints @media abajo */
 
 
-/*Tablet*/
-@media (min-width: 768px) {
-
-/* Menú */
-
-/*title*/
-
-/*Skills*/
-
-/*Hobbies*/
-
-/*Formación Académica*/
-
-/*Experiencia Profesional*/
-
-}
-
 /*Mobile*/
-@media (min-width: 425px) {
-
+@media only screen and (max-width: 425px) {
+    
 /*Menu*/
 
 /*Titulo*/

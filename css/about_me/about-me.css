@@ -2,6 +2,15 @@ section.about{
     display: flex;
     padding-inline: 10vh;
     margin-bottom: 4vh;
+    background-color: var(--cor-de-about-me);
+    padding: 10vh;
+}
+
+.about__container{
+    padding-inline: 5vh;
+    width: 90%; 
+    overflow: auto;
+    align-self: stretch;
 }
 
 h3.about__title{
@@ -16,13 +25,40 @@ h3.about__title{
 
 p.about__paragraph{
     display: flex;
-    width: 751px;
     flex-direction: column;
     color: var(--preto-100, #464646);
-    font-family: Raleway;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 1.5;
     margin-bottom: 2vh;
+    text-align:justify;
+}
+
+
+/*Tablet*/
+@media only screen and (max-width: 768px) and (min-width: 426px){
+    section.about{
+        display: flex;
+        padding-inline: 4vh;
+        margin-bottom: 1vh;
+        background-color: blueviolet;
+    }
+    h3.about__title{
+        color: var(--preto-100, #464646);
+        font-size: 22px;
+        margin-bottom: 2vh;
+    }
+
+    .about__container{
+        padding-inline: 2vh;
+    }
+
+    p.about__paragraph{
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 2vh;
+        width: 90%
+    }
+
+
 }

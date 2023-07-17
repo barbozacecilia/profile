@@ -117,3 +117,31 @@ button.form__contact__button{
 .input-message-error {
     display: none;
   }
+
+  /*Tablet*/
+@media only screen and (max-width: 768px) and (min-width: 426px){
+    section.form__contact {
+        width: 100%;
+    }
+
+    .form__contact__contact {
+     padding: 0;
+     gap: 0;
+     margin: 4vh;
+    }
+    
+        .form__contact--left {
+        display: none;
+    }
+
+    h2.form__contact__title{
+        font-size: 22px;
+        margin-bottom: 1vh;
+    }
+    h3.form__contact__subtext {
+        font-size: 16px;
+    }
+    .form__contact__text {
+        gap: 5px;
+    }
+}
