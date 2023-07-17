@@ -72,10 +72,10 @@ h3.form__contact__subtext{
     position: absolute;
     top: 0.5vh;
     left: 2vh;
-    font-size: 16px;
+    font-size: 14px;
     pointer-events: none;
     transition: all 0.3s ease;
-    color: transparent;
+    color: var(--cor-placeholder);
 }
 
 

@@ -9,30 +9,39 @@ inputs.forEach(input => {
     
 });
 
+ const allInputs = document.querySelectorAll('.input__field');
+ const textarea = document.querySelector('.form__contact__textarea');
+ const label = document.querySelectorAll('.input__label');
 
-// export function inputLabel(input) {
-//     document.querySelector(".input__field");
+ console.log(allInputs.length);
 
-//     inputLabel.addEventListener("focus", ()=>{
-//         console.log("click")
-//         document.querySelector(".input__label").style.top = '-20px';
-//         document.querySelector(".input__label").style.top = '-20px';    
-//     });
-// }
+ for( let index = 0; index < allInputs.length ; index++){  
+ allInputs[index].addEventListener("focus", function(){
+         console.log(label.length)
+         allInputs[index].nextElementSibling.style.color = 'grey';
+         allInputs[index].nextElementSibling.style.transition = 'all 0.3s ease';
+         allInputs[index].nextElementSibling.style.top = '-20px';
+         allInputs[index].nextElementSibling.style.color = 'var(--cor-de-blue)';
+     });
 
+textarea.addEventListener('focus', function(){
+    textarea.nextElementSibling.style.color = 'grey';
+    textarea.nextElementSibling.style.transition = 'all 0.3s ease';
+    textarea.nextElementSibling.style.top = '-20px';
+    textarea.nextElementSibling.style.color = 'var(--cor-de-blue)';
+})
 
-
-const input = document.querySelector(".input__field");
-const label = document.querySelector(".input__label");
-    input.addEventListener("focus", function(){
-    label.style.display = 'inline';
-    console.log("click")
-});
-
-input.addEventListener("blur", function(){
-    label.style.top= '-20px';
-    label.style.color = '#007bff';
-    label.style.width= "100%";
-    label.style.fontSize= "12px";
-    label.style.fontFamily= "Raleway";
-});
+ allInputs[index].addEventListener("blur", function(){
+        const label = allInputs[index].nextElementSibling;
+        label.style.top = '-20px';
+        label.style.width = '100%';
+        label.style.fontSize = '12px';
+        label.style.fontFamily = 'Raleway';
+     });
+     textarea.addEventListener('blur', function(){
+        textarea.style.top = '-20px';
+        textarea.style.width = '100%';
+        textarea.style.fontSize = '12px';
+        textarea.style.fontFamily = 'Raleway';
+     })
+ }
