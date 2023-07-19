@@ -51,18 +51,14 @@ img.title__profile{
     height: 350px;
     width: 350px;
     margin: 0 auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     border-radius: 100%;
 
 }
 
 /*Tablet*/
-@media only screen and (max-width: 768px) and (min-width: 426px){
+@media only screen and (max-width: 768px){
 
     section.title{
-        display: flex;
         margin-bottom: 1vh;
     }
     
@@ -87,5 +83,46 @@ img.title__profile{
     height: 146px;
 }
 
+
+}
+
+/*Mobile*/
+@media only screen and (max-width: 426px) {
+    section.title{
+        justify-content: flex-start;
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: flex-start;
+        margin: 0;
+    }
+
+    div.title__div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-inline: 3vh;
+        }
+
+    img.title__profile {
+        width: 98px;
+        height: 98px;
+        margin: 0 0 0.5rem 0;
+    }
+    .title__bio{
+        font-size: 22px;
+        align-items: flex-start;
+    }
+
+    h3.title__subsection{
+        font-size: 14px;
+        padding: 0;
+        margin: 1rem 0;
+    }
+    .title__network__item{
+        font-size: 14px;
+    }
+    ul.title__network{
+        width: 100%;
+    }
 
 }

@@ -42,19 +42,38 @@ h3.skills__title {
     section.skills {
         margin-bottom: 2vh;
         width: 80%;
-        display: flex;
         align-items: center;
     
     }
 
     .skills__line {
-        display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        flex-direction: row;
         align-content: center;
         align-items: center;
         align-self: strech;
     }   
 
+}
+
+/*Mobile*/
+@media only screen and (max-width: 426px) {
+    section.skills {
+        margin-bottom: 1vh;
+        width: 80%;
+        align-items: center;
+    
+    }
+    h3.skills__title {
+        font-size: 22px;
+    }
+
+    .skills__line {
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        align-self: strech; 
+    }   
+    
 }

@@ -74,6 +74,7 @@ li.academic__courses__item__subtitle{
 
     .academic__courses{
         width: 90%;
+        
     }
 
 li.academic__courses__item__img{
@@ -101,3 +102,43 @@ li.academic__courses__item__subtitle{
     font-size: 14px;
 }
 }
+
+/*Mobile*/
+@media only screen and (max-width: 426px) {
+
+    h2.academic__title{
+        font-size: 22px;
+    }
+
+    .academic__courses{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li.academic__courses__item__img{
+        height: 118px;
+        width: auto;
+        padding: 16px;
+        gap: 5px;
+    }
+img#alura__logo{
+    height: 90px;
+}
+img#ingenias__logo{
+    height: 100px;
+}
+
+img#utn__logo {
+    height: 100px;
+}
+    li.academic__courses__item__title{
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    li.academic__courses__item__subtitle{
+        font-size: 14px;
+        font-weight: 500;
+    }
+}   

@@ -71,8 +71,7 @@ section#about-me{
 
 section.academic{
     background-color: var(--cor-de-about-me);
-    padding: 4vh;
-
+    width: 100%;
 }
 
 
@@ -80,6 +79,7 @@ section.academic{
 
 section.form__contact{    
     background-color: var( --cor-de-about-me);
+    width: 100%;
 }
 
 /*footeer*/

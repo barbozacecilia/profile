@@ -70,14 +70,16 @@ h3.experience__text{
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin-bottom: 1vh;
 }
 
 /*button*/
 
 .experience__description{
     display: flex;
-    align-items: flex-start;
     gap: 16px;
+    align-items: flex-end;
+    justify-content: flex-start;
 }
 button.experiencia__botao--repo{
     display: flex;
@@ -117,7 +119,7 @@ button.experience__botao--demo{
     }
 
 /*Tablet*/
-@media only screen and (max-width: 768px) and (min-width: 426px){
+@media only screen and (max-width: 768px){
 
 h2.experience__section__title{
     font-size: 22px;
@@ -145,5 +147,15 @@ button.experiencia__botao--repo , button.experience__botao--demo  {
 .experience__description {
     margin: 1vh;
 }
+
+}
+
+/*Mobile*/
+@media only screen and (max-width: 426px) {
+    button.experiencia__botao--repo , button.experience__botao--demo  {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
 
 }

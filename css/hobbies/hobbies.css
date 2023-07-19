@@ -54,3 +54,24 @@ h3.hobbies__title {
     }   
 
 }
+
+/*Mobile*/
+@media only screen and (max-width: 426px) {
+    section.hobbies{
+        margin-bottom: 1vh;
+        width: 80%;
+    }
+    h3.hobbies__title {
+        font-size: 22px;
+    }
+
+    .hobbies__line{
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        align-self: strech; 
+    }   
+    
+    
+}

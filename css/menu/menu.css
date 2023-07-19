@@ -80,3 +80,20 @@ img.menu__img{
 
 
 }
+
+/*Mobile*/
+@media only screen and (max-width: 426px) {
+
+    section.menu{
+        width: 100%;
+        margin: 0;
+        padding-inline: 5px;
+    }
+    .menu__list__item:not(:last-child) {
+        display: none;
+      }
+
+      ul li:last-child{
+        font-size: 14px;
+      }
+}

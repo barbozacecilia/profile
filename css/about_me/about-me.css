@@ -3,12 +3,13 @@ section.about{
     padding-inline: 10vh;
     margin-bottom: 4vh;
     background-color: var(--cor-de-about-me);
-    padding: 10vh;
+    width: 100%;
+
 }
 
 .about__container{
-    padding-inline: 5vh;
     width: 90%; 
+    padding-inline: 10vh;
     overflow: auto;
     align-self: stretch;
 }
@@ -50,7 +51,7 @@ p.about__paragraph{
     }
 
     .about__container{
-        padding-inline: 2vh;
+        padding-inline: 5vh;
     }
 
     p.about__paragraph{
@@ -60,5 +61,28 @@ p.about__paragraph{
         width: 90%
     }
 
+}
 
+/*Mobile*/
+@media only screen and (max-width: 426px) {
+
+    section.about{
+        padding: 1vh;
+    }
+    .about__container{
+        padding-inline: 2vh;
+        width: 100%;
+    }
+
+    h3.about__title{
+        font-size: 22px;
+    }
+
+    p.about__paragraph{
+        font-size: 14px;
+    }
+    #signature{
+        width: 140px;
+        height: 52px;
+    }
 }

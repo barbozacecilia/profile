@@ -4,14 +4,13 @@ section#contacto.form__contact{
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    padding-inline: 10vh;
 }
 .form__contact__contact{
     display: flex;
     padding-top: 64px;
     align-items: flex-end;
     gap: 16px;
-
+    padding-inline: 10vh;
 }
 .form__contact--left{
     width: 400px;
@@ -119,7 +118,7 @@ button.form__contact__button{
   }
 
   /*Tablet*/
-@media only screen and (max-width: 768px) and (min-width: 426px){
+@media only screen and (max-width: 768px){
     section.form__contact {
         width: 100%;
     }
